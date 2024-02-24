@@ -1,0 +1,17 @@
+.form{
+    width: 100%;
+    height: calc(100vh - 60px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('/images/bg1.jpg');
+    background-size: 100% 100%;
+    background-position: center;
+}
+.form form{
+    color: white;
+    width: 20%;
+    font-weight: bold;
+    background: #0000009a;
+    border-radius: 8px;
+}
