@@ -8,7 +8,7 @@ function Todo() {
         if(lists){
           return JSON.parse(lists)
         }else{
-          []
+          return []
         }
        }
     let [val,setVal]=useState('')
@@ -51,11 +51,11 @@ function Todo() {
             <img src="/images/todo.jpg" alt="" className="img" />
             <div className="heading">TodoApp</div>
            <div className="input">
-           <input type="text" name='' onChange={changeVal}/>
+           <input type="text" name=''maxLength={28} onChange={changeVal}/>
             <div className="inp-btn" onClick={addValue}>+</div>
            </div>
-          {item.map((i)=>{
-            return (<li className='li' key={i.id}>{i.name} <i className='bi bi-trash3' onClick={()=>{delFunc(i.id)}}></i></li>)
+          {item.map((listItem)=>{
+            return (<li className='li' key={listItem.id}>{listItem.name} <i className='bi bi-trash3' onClick={()=>{delFunc(listItem.id)}}></i></li>)
 
           })}
         </div>
