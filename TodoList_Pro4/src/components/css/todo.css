@@ -1,0 +1,88 @@
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.con{
+    width: 30%;
+    min-height: 40%;
+    max-height: auto;
+    background: blueviolet;
+    border-radius:12px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.img{
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    margin-top: 2%;
+}
+.heading{
+    font-size: 2rem;
+    color: red;
+    font-weight: bolder;
+    font-family: serif;
+}
+
+.input{
+    width: 80%;
+    height: 40px;
+    background: lightblue;
+    margin: 2% 0;
+    border-radius: 8px;
+    display: flex;
+}
+.input input{
+    width: 90%;
+    outline: none;
+    background: lightblue;
+    color: black;
+    font-family: serif;
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 8px;
+
+}
+.input .inp-btn{
+    width: 10%;
+    background: lightblue;
+    color: red;
+    font-weight: bolder;
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.li{
+    width: 75%;
+    height: 40px;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 6px;
+    background: #000;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: serif;
+    list-style: none;
+    margin: 2% 0;
+    border-radius: 8px;
+}
+.li i{
+    color: white;
+    font-size: 1.2rem;
+
+}
+.li i:hover{
+    color: red;
+    cursor: pointer;
+}
