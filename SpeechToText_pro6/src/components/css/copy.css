@@ -1,0 +1,16 @@
+.copy{
+    font-size: 1.3rem;
+    color: black;
+    background: white;
+    border: none;
+    outline: none;
+    font-family: serif;
+    text-align: center;
+    padding: 8px;
+    position: absolute;
+    left: 0;
+    bottom: 4%;
+    background: blueviolet;
+    cursor: pointer;
+
+}
