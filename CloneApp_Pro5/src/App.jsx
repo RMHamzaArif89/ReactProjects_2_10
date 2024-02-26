@@ -1,12 +1,13 @@
 import { useState } from 'react'
 import './App.css'
+import Clone from './components/Clone'
 
 function App() {
  
 
   return (
     <>
-     <h1></h1>
+    <Clone/>
     </>
   )
 }
