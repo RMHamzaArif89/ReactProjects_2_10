@@ -1,6 +1,7 @@
 import 'regenerator-runtime/runtime'
 import React from 'react';
 import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition';
+import './css/speech.css'
 
 
 const Dictaphone = () => {
@@ -21,9 +22,9 @@ const Dictaphone = () => {
   }
 
   return (
-    <div>
-      <p className='mircrophone'>Microphone: {listening ? 'on' : 'off'}</p>
-      <p className='transcript'>{transcript}</p>
+    <div className='con'>
+      <div className='microphone'>Microphone: {listening ? 'on' : 'off'}</div>
+      <div className='transcript'>{transcript}</div>
 
       <div className="btns">
       <button className='start' onClick={StartListening}>Start</button>

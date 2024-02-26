@@ -1,0 +1,50 @@
+
+.con{
+    width: 480px;
+    min-height: 300px;
+    max-height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(130, 247, 247);
+}
+
+.microphone{
+    font-size: 2rem;
+    text-align: center;
+    margin: 2% 0;
+    color: red;
+    font-weight: bolder;
+}
+
+.transcript{
+    width: 90%;
+    min-height: 240px;
+    max-height: auto;
+    
+    font-size: 1.2rem;
+    color: blueviolet;
+    font-family: serif;
+
+}
+.btns{
+    margin: 2% 0;
+    display: flex;
+    gap: 25px;
+}
+.btns button{
+    padding: 8px;
+    text-align: center;
+    color: white;
+    background: red;
+    font-size: 1.3rem;
+    font-family: serif;
+ outline: none;
+ border: none;
+ border-radius: 6px;
+
+}
+.btns button:hover{
+    background: #000;
+    cursor: pointer;
+}
