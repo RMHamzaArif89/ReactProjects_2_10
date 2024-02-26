@@ -1,18 +1,20 @@
+import 'regenerator-runtime/runtime'
 import React from 'react';
-import { createSpeechlySpeechRecognition } from '@speechly/speech-recognition-polyfill';
 import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition';
 
-const appId = '<INSERT_SPEECHLY_APP_ID_HERE>';
-const SpeechlySpeechRecognition = createSpeechlySpeechRecognition(appId);
-SpeechRecognition.applyPolyfill(SpeechlySpeechRecognition);
 
 const Dictaphone = () => {
+    const StartListening=()=>SpeechRecognition.startListening({ continuous: true ,language:'en'})
+    const StopListening=()=>SpeechRecognition.stopListening()
+    const start=()=>{
+    console.log('start')
+    }
   const {
     transcript,
     listening,
+    resetTranscript,
     browserSupportsSpeechRecognition
   } = useSpeechRecognition();
-  const startListening = () => SpeechRecognition.startListening({ continuous: true });
 
   if (!browserSupportsSpeechRecognition) {
     return <span>Browser doesn't support speech recognition.</span>;
@@ -20,14 +22,14 @@ const Dictaphone = () => {
 
   return (
     <div>
-      <p>Microphone: {listening ? 'on' : 'off'}</p>
-      <button
-        onTouchStart={startListening}
-        onMouseDown={startListening}
-        onTouchEnd={SpeechRecognition.stopListening}
-        onMouseUp={SpeechRecognition.stopListening}
-      >Hold to talk</button>
-      <p>{transcript}</p>
+      <p className='mircrophone'>Microphone: {listening ? 'on' : 'off'}</p>
+      <p className='transcript'>{transcript}</p>
+
+      <div className="btns">
+      <button className='start' onClick={StartListening}>Start</button>
+      <button className='stop' onClick={StopListening}>Stop</button>
+      <button className='reset' onClick={resetTranscript}>Reset</button>
+      </div>
     </div>
   );
 };
