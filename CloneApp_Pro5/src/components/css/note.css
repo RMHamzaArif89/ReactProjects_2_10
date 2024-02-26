@@ -1,0 +1,38 @@
+.note{
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.text{
+  
+    max-height: auto;
+    margin: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+    width: 15%;
+    min-height: 120px;
+    font-size: 1.4rem;
+    color:white;
+    font-size: 1rem;
+    font-family: serif;
+    border-radius: 12px;
+    position: relative;
+
+}
+.delete{
+    width: 40px;
+    height: 30px;
+    background: red;
+    position: absolute;
+    bottom: 2%;
+    right: 2%;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
