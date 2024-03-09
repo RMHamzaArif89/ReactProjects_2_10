@@ -1,0 +1,77 @@
+.profinder{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(180deg,lightblue,white);
+}
+.search-con{
+    width: 240px;
+    height: 40px;
+    display: flex;
+    border-radius: 6px;
+    background: white;
+}
+.pro-search{
+    width: 85%;
+    height: 100%;
+    border: none;
+    outline: none;
+    color: blueviolet;
+    font-family: serif;
+    font-size: 1.3rem;
+    border: 1px solid gray;
+
+}
+.pro-btn{
+    width: 15%;
+    height: 100%;
+    font-size: 1.2rem;
+    color: white;
+    background: black;
+    font-family: serif;
+    padding: 8px 0;
+    text-align: center;
+}
+.pro-btn:hover{
+    background: gray;
+    cursor: pointer;
+    color: black;
+}
+
+
+.pro-card{
+    width: 40%;
+    height: 60%;
+    background-color: lightcoral;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.pro-img{
+    width: 50%;
+    height: 60%;
+    border-radius:3rem;
+}
+.pro-name{
+    font-size: 1.8rem;
+    color: black;
+    font-family: serif;
+    display: flex;
+    gap: 6px;
+
+}
+.pro-repo,.pro-followers{
+    font-family: sans-serif;
+    font-style: italic;
+    color:black;
+    font-size: 1.5rem;
+    display: flex;
+    gap: 6px;
+}
+.pro-following{
+    font-size: 1.2rem;
+    color: black;
+}
