@@ -10,11 +10,13 @@
 
 }
 .heading{
-    font-size: 3rem;
-    color: red;
-    font-family: serif;
+    font-family: "Silkscreen", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3rem;
     text-align: center;
     display: flex;
+    align-items: center;
     gap: 12px;
 }
 .con{
@@ -31,8 +33,19 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 4rem;
-    color:blueviolet;
-    font-weight: 900;
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+    font-size: 3.5rem;
+}
+
+.refresh-btn{
+    padding: 8px;
+    background: red;
+    border: 1px solid white;
     font-family: serif;
+    text-align: center;
+    font-size: 1.3rem;
+    cursor: pointer;
 }
