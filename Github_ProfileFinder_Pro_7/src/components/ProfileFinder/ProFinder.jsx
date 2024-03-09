@@ -50,7 +50,7 @@ function ProFinder() {
         <div className="pro-following">Following:{data.following} <SlUserFollowing/> </div>
         <div className="date">Joined at: {data.created_at}</div>
         <div className="date">Updated at: {data.updated_at}</div>
-         <a href={data.html_url} className="link-btn" >GotoGithub</a>
+         <a href={data.html_url} className="link-btn" target='_black'>GotoGithub</a>
     </div>
       
     </div>
