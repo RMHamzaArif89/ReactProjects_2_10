@@ -43,16 +43,17 @@
 
 
 .pro-card{
-    width: 40%;
-    height: 60%;
+    width: 50%;
+    height: 80%;
     background-color: lightcoral;
     display: flex;
     align-items: center;
     flex-direction: column;
+    justify-content: space-around;
 }
 .pro-img{
-    width: 50%;
-    height: 60%;
+    width: 40%;
+    height: 35%;
     border-radius:3rem;
 }
 .pro-name{
@@ -74,4 +75,19 @@
 .pro-following{
     font-size: 1.2rem;
     color: black;
+}
+.date{
+    font-size: 1.4rem;
+    color: blue;
+    font-family: serif;
+    font-style: italic;
+}
+.link-btn{
+    padding: 8px;
+    border-radius: 6px;
+    background: red;
+    color: white;
+    text-align: center;
+    font-family: serif;
+    
 }

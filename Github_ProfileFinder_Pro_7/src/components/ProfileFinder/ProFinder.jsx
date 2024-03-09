@@ -17,13 +17,15 @@ function ProFinder() {
         let res= await axios.get(`https://api.github.com/users/${name}`)
         setData(res.data)
         
+        
     }
     
     
     let SearchUser=()=>{
         
         setName(val)
-        console.log(data)
+        
+    
     
     }
 
@@ -31,9 +33,10 @@ function ProFinder() {
     useEffect(()=>{
         fetchData()
         
-    },[])
+    },[name])
    
   return (
+  data &&  <>
     <div className='profinder'>
     <div className="search-con">
         <input type="text" className="pro-search" placeholder='EnterName'value={val} onChange={(e)=>{setValue(e.target.value)}}/>
@@ -45,9 +48,14 @@ function ProFinder() {
         <div className="pro-repo">Repos:{data.public_repos} <RiGitRepositoryFill/></div>
         <div className="pro-followers">Followers:{data.followers}<RiUserFollowLine/></div>
         <div className="pro-following">Following:{data.following} <SlUserFollowing/> </div>
+        <div className="date">Joined at: {data.created_at}</div>
+        <div className="date">Updated at: {data.updated_at}</div>
+         <a href={data.html_url} className="link-btn" >GotoGithub</a>
     </div>
       
     </div>
+  </>
+    
   )
 }
 
