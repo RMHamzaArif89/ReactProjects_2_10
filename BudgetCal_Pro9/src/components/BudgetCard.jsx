@@ -4,7 +4,7 @@ function BudgetCard({id,title,amount,expense,ProgressVal,setShow2,editItem}) {
     return (
         <div className="card d-flex flex-column justify-content-around p-3 my-3" style={{ height: '200px' }}>
 
-          <div className="header d-flex align-items-center justify-content-between">
+          <div className="header d-flex align-items-center justify-content-between ">
             <h1>{title}</h1>
             <div className="text">{expense}$/{amount}$</div>
           </div>

@@ -3,7 +3,7 @@ import React from 'react'
 function BudgetModel({addBudgetCard,show,title,amount,setTitle,setAmount,setShowModule}) {
   return (
     <>
-     <div className="modal" style={{ display: show ? `block` : 'none' }}>
+     <div className="modal" style={{ display: show ? `block` : 'none'}}>
           <div className="modal-dialog">
             <div className="modal-content">
               <div className="modal-header">

@@ -1,6 +1,6 @@
 import React from 'react'
 
-function ExpenseModule({show2,setShow2,expense,setE,addExp}) {
+function ExpenseModule({show2,setShow2,expense,setE,addExp }) {
   return (
     <>
     
